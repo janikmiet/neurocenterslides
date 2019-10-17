@@ -1,0 +1,158 @@
+---
+title: "Neurocenter Finland Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Jani Miettinen"
+institute: "Neurocenter Finland"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    seal: false # disable title slide
+    #titleSlideClass: [top, left, inverse] ## adjust title slide
+    css: ["default", "neurostyle.css", "footer-header.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true # highlight code lines that start *, {{}} or with trailing #<<
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: center, middle
+
+# Kansallinen neurokeskus
+
+## Demo slidet
+
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+### Mistä on kyse?
+
+Suomen hallitus rahoittaa Kansallisen neurokeskuksen perustamista osana terveysalan tutkimuksen ja innovaatiotoiminnan kasvustrategian toimeenpanoa. Valmisteluvaihetta ja yhteistyöverkostoa koordinoi Itä-Suomen yliopisto, joka valmistelevan työryhmän avulla suunnittelee perustettavan neurokeskuksen toimintaa.
+
+### https://neurocenterfinland.fi/
+
+<div class="my-footer"><span>&copy; Kansallinen neurokeskus 2019 </span></div>
+---
+
+class: inverse, center, middle
+
+# First chapter: Beginning
+
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+# Hello World
+
+Install the **neuro-xaringan** package from [Github]():
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("janikmiet/neuro-xaringan")
+```
+
+
+---
+background-image: url(./img/FINBB_patologi.jpg)
+background-position: 50% 50%
+background-size: contain
+class: center, bottom, inverse
+
+# Second chapter: Coded to connect
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+## R Code
+
+```{r comment='#'}
+# simple regression
+fit = lm(mpg ~ 1 + hp + cyl, data = mtcars)
+coef(summary(fit))
+```
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+## R Plots
+
+```{r cars, fig.height=4, dev='svg'}
+par(mar = c(4, 4, 1, .1))
+plot(cars, pch = 19, col = 'darkgray', las = 1)
+abline(fit, lwd = 2)
+```
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+## Tables
+
+If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+
+```{r}
+knitr::kable(head(iris), format = 'html')
+```
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+## HTML Widgets
+
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(lat = 62.89238, lng = 27.67703, zoom=12)
+```
+
+---
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+## Datatables
+
+```{r eval=require('DT'), tidy=FALSE}
+DT::datatable(
+  head(iris, 10),
+  fillContainer = FALSE, options = list(pageLength = 8)
+)
+```
+
+
+---
+background-image: url(./img/image.png)
+background-position: 50% 50%
+background-size: contain
+class: center, top, inverse
+
+# Final chapter: credits
+
+
+---
+class: center, middle
+
+## About
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with **Neurocenter Finland** theme.
+
+Good vibes comes with [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr) and [R Markdown](https://rmarkdown.rstudio.com).
+
+---
+class: center, middle
+
+<div class="my-header"><img src="img/logo_fi.png" style="height: 30px;"/></div>
+
+# Thanks!
+
+Firstname, Last name </br>
+Title </br>
+first.last@uef.fi </br>
+
+<img src="img/codedtoconnect.jpg" width = 350>
+
