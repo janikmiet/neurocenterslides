@@ -52,10 +52,16 @@ class: inverse, center, middle
 
 # Hello World
 
-Install the **neuro-xaringan** package from [Github]():
+Install the **xaringan** package from [Github]():
 
 ```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("janikmiet/neuro-xaringan")
+devtools::install_github("yihui/xaringan")
+```
+
+and after this install **neurotemplate**
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
 ```
 
 
