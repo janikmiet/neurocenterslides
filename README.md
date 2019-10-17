@@ -5,3 +5,8 @@ Package includes color and font schemes for Neurocenter Finland presentations. T
 ```r
 devtools::install_github("yihui/xaringan")
 ```
+Install package with [uefr](https://gitlab.uef.fi/packages/uefr)-package:
+
+```r
+uefr::install_uefgit("neurotemplate", group = "packages")
+```
