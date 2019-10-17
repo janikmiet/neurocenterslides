@@ -10,6 +10,6 @@ Install package with [uefr](https://gitlab.uef.fi/packages/uefr)-package:
 ```r
 uefr::install_uefgit("neurotemplate", group = "packages")
 ```
-After installation you can find a new template in your Rmarkdown files. Go to *File* -> *New File* -> *R markdown...* and select *From Template*
+Restart your R instance. After this you can find a new template in your Rmarkdown files. Go to *File* -> *New File* -> *R markdown...* and select *From Template*
 
 ![](img/rmarkdown_template.png)
