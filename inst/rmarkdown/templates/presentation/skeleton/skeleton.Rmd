@@ -145,7 +145,7 @@ class: center, middle
 
 ## About
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with **Neurocenter Finland** theme.
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with [**Neurocenter Finland** theme](https://github.com/janikmiet/neurocenterslides).
 
 Good vibes comes with [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr) and [R Markdown](https://rmarkdown.rstudio.com).
 
@@ -156,7 +156,7 @@ class: center, middle
 
 # Thanks!
 
-Firstname, Last name </br>
+First name Last name </br>
 Title </br>
 first.last@uef.fi </br>
 
